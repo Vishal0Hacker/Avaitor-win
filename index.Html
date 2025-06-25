@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Hacker | Vishalzxx </title>
+    <style>
+        /* Basic Settings */
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Matrix Canvas */
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Main Container - Bio Box */
+        .container {
+            position: relative;
+            padding: 15px;
+            max-width: 80%;
+            width: 300px;
+            margin: 30px auto;
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid #00ff00;
+            box-shadow: 0px 0px 15px #00ff00;
+            border-radius: 10px;
+            z-index: 2;
+        }
+
+        /* Profile Image */
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 2px solid #00ff00;
+            box-shadow: 0px 0px 15px #00ff00;
+            margin-bottom: 10px;
+        }
+
+        /* Bio Section */
+        .bio h2 {
+            font-size: 1.3em;
+            text-shadow: 0px 0px 10px #00ff00;
+        }
+        .bio p {
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        /* Button */
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            border: 2px solid #00ff00;
+            box-shadow: 0px 0px 10px #00ff00;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .button a {
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #00ff00;
+            color: black;
+        }
+
+        /* Skills Section - Appears on Scroll */
+        .skills-container {
+            width: 80%;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.5); /* Transparent for Matrix */
+            border: 2px solid #00ff00;
+            box-shadow: 0px 0px 15px #00ff00;
+            border-radius: 10px;
+            z-index: 2;
+            text-align: left;
+        }
+
+        .skills-container h2 {
+            text-align: center;
+            text-shadow: 0px 0px 10px #00ff00;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            padding: 8px;
+            border-bottom: 1px solid #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    
+    <div class="container">
+        <!-- Profile Image -->
+        <img src="https://i.ibb.co/7xdRVDBz/IMG-20250622-173007-015.webp" class="profile-img" alt="Vishal Hacker">
+        
+        <div class="bio">
+            <h2>👤 Vishal Hacker | @Vishalzxxx</h2>
+            <p>🔹 Ethical Hacker & Developer</p>
+            <p>🔹 Cyber Security Expert</p>
+            <p>🔹 Skilled in Python, Java, C++</p>
+            <div class="button">
+                <a href="https://www.youtube.com/@Flash_admin" target="_blank">🔰 YouTube </a>
+            </div>
+        </div>
+
+            <div class="button">
+                <a href="https://www.instagram.com/coder_vishal123?igsh=MWhmdzU1czFpbTdqbw==" target="_blank">🥌 Instagram</a>
+            </div>
+        </div>
+    
+            <div class="button">
+                <a href="https://t.me/+dJDuBryLP9Y2MTk1" target="_blank">🔰 TELEGRAM</a>
+            </div>
+        </div>
+        
+            <div class="button">
+                <a href="https://t.me/+fJkxzjO26Bk3ZTJl" target="_blank">🔰 TELEGRAM</a>
+            </div>
+        </div>
+    
+            <div class="button">
+                <a href="https://t.me/Black_Hats_Hackers" target="_blank">🔰 TELEGRAM</a>
+            </div>
+        </div>
+    
+            <div class="button">
+                <a href="https://t.me/+XB9U1od85Q02Yjll" target="_blank">🔰 TELEGRAM</a>
+            </div>
+        </div>
+
+            <div class="button">
+                <a href="https://t.me/+V1zW14MjEq9jYjRl" target="_blank">🔰 TELEGRAM</a>
+            </div>
+        </div>
+    
+            <div class="button">
+                <a href="https://t.me/+Wq_mntDJr0tjMjI1" target="_blank">🔰 TELEGRAM</a>
+            </div>
+        </div>
+        
+            <div class="button">
+                <a href="https://t.me/+7bHMeatIV-A4ZTY1" target="_blank">🔰 TELEGRAM</a>
+            </div>
+            
+            <div class="button">
+                <a href="https://t.me/Black_Hats_Hackers" target="_blank">🔰 TELEGRAM</a>
+            </div>
+        </div>
+    
+            <div class="button">
+                <a href="https://t.me/+XB9U1od85Q02Yjll" target="_blank">🔰 TELEGRAM</a>
+            </div>
+        </div>
+
+            <div class="button">
+                <a href="https://t.me/+V1zW14MjEq9jYjRl" target="_blank">🔰 TELEGRAM</a>
+            </div>
+        </div>
+    
+            <div class="button">
+                <a href="https://t.me/Bot_Hacking_Tip" target="_blank">🔰 TELEGRAM</a>
+            </div>
+         </div>
+       </div>
+    
+            <div class="button">
+                <a href="https://t.me/+JJ98RiRHWThjMDZl" target="_blank">🔰 TELEGRAM</a>
+            </div>
+        </div>
+    
+            <div class="button">
+                <a href="https://t.me/+YCLJu_TLN2E4OGJl" target="_blank">🔰 TELEGRAM</a>
+            </div>
+        </div>
+    </div>
+    
+    <audio id="bg-audio" loop="">
+        <source src="media/1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+       
+    <script>
+        // Matrix Effect with "Dark Hacker Cj7 Team"
+        var canvas = document.getElementById("matrix");
+        var ctx = canvas.getContext("2d");
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener("resize", resizeCanvas);
+
+        var text = "Dark Hacker Cj7 Team ";
+        var columns = Math.floor(canvas.width / 20);
+        var drops = new Array(columns).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.15)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "#00ff00";
+            ctx.font = "16px Courier New";
+
+            for (var i = 0; i < drops.length; i++) {
+                var char = text[Math.floor(Math.random() * text.length)];
+                ctx.fillText(char, i * 20, drops[i] * 20);
+                
+                if (drops[i] * 20 > canvas.height && Math.random() > 0.98) 
+                    drops[i] = 0;
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 35);
+    </script>
+</body>
+</html>
