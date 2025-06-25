@@ -206,6 +206,8 @@
         // Matrix Effect with "Dark Hacker Cj7 Team"
         var canvas = document.getElementById("matrix");
         var ctx = canvas.getContext("2d");
+       // Play audio
+            bgAudio.play().catch(e => console.log("Audio play failed:", e));
 
         function resizeCanvas() {
             canvas.width = window.innerWidth;
@@ -223,8 +225,6 @@
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             ctx.fillStyle = "#00ff00";
             ctx.font = "16px Courier New";
- // Play audio
-            bgAudio.play().catch(e => console.log("Audio play failed:", e));
 
             for (var i = 0; i < drops.length; i++) {
                 var char = text[Math.floor(Math.random() * text.length)];
